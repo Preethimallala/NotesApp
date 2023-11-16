@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NotesApp" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+    <style name="Theme.progressbar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorSecondary">@color/red</item>
+</style>
+</resources>
