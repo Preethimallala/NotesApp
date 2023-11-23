@@ -1,15 +1,14 @@
 package com.example.notesapp.Models
 
+import kotlinx.android.parcel.Parcelize
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import kotlinx.android.parcel.Parcelize
 
 
-
-Parcelize
+@Parcelize
 @Entity(tableName = "Notes")
-class notes(
+class Notes(
 
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null,

@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark"
-    tools:context=".ui.Fragment.CreateNote">
+    tools:context=".ui.Fragment.EditNote">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:paddingEnd="10dp">
 
         <EditText
-            android:id="@+id/CreateTitle"
+            android:id="@+id/EditTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -27,7 +27,7 @@
             android:textColorHint="@color/sky" />
 
         <EditText
-            android:id="@+id/CreateSubTitle"
+            android:id="@+id/EditSubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -46,7 +46,7 @@
             >
 
             <ImageView
-                android:id="@+id/reddot"
+                android:id="@+id/greendot"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:background="@drawable/green"
@@ -62,16 +62,15 @@
                 />
 
             <ImageView
-                android:id="@+id/greendot"
+                android:id="@+id/reddot"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:background="@drawable/orange"
                 android:layout_marginLeft="20dp"
                 />
-
         </LinearLayout>
         <EditText
-            android:id="@+id/createNotes"
+            android:id="@+id/EditTextarea"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_marginTop="10dp"
@@ -82,12 +81,9 @@
             android:inputType="textPersonName"
             android:padding="12dp"
             android:textColorHint="@color/sky" />
-
-
     </LinearLayout>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnCreateNote"
+        android:id="@+id/btnEditNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/red"
@@ -95,6 +91,4 @@
         android:src="@drawable/save"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp" />
-
-
 </FrameLayout>
